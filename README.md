@@ -33,5 +33,10 @@ or
 $ ../../tessera-22.1.7/bin/tessera -configfile tessera.conf
 
 ```
+## Authentication
+```sh
+python3 generateJWT.py
+
+```
 ## Following the hyperledger besu private network document 
 https://besu.hyperledger.org/en/stable/private-networks/
