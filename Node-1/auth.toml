@@ -1,0 +1,5 @@
+[Users.supamongkon]
+password = "$2a$10$0qaTf4LpjJ2Q/xCAixvHy.WgsQtp0TNpFHXQcPIZAh9I0FAxeEmWG%"
+permissions=["net:*","eth:blockNumber"]
+privacyPublicKey="VazacdLe/IK9Lpq7K7WkNR5Lhf6gnl23ESovCES/9gY=" 
+
