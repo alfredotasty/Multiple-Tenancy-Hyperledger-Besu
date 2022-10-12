@@ -34,6 +34,15 @@ $ ../../tessera-22.1.7/bin/tessera -configfile tessera.conf
 
 ```
 ## Authentication
+
+payload
+```sh
+{ "permissions":["*:*"],
+  "privacyPublicKey":tesseraNode_publicKey,
+  "exp": 1600899999002
+ }
+```
+generate JWT token
 ```sh
 python3 generateJWT.py
 
