@@ -32,7 +32,7 @@ web3.priv.generateAndSendRawTransaction(contractOption);
 ```
 
 
-## Blueprint
+## Multiple-tenency Blueprint
 <img width="600" alt="multiplewallet" src=https://user-images.githubusercontent.com/73258014/195950258-c310653c-91ed-4182-8d8d-a1ed500b45f8.png>
 
 
