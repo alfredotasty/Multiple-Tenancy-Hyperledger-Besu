@@ -3,7 +3,8 @@ This network use Hyperledger besu and Tessera
 
 
 ## Blueprint
-![privateUserTransaction drawio](https://user-images.githubusercontent.com/73258014/195950258-c310653c-91ed-4182-8d8d-a1ed500b45f8.png)
+<img width="600" alt="multiplewallet" src=https://user-images.githubusercontent.com/73258014/195950258-c310653c-91ed-4182-8d8d-a1ed500b45f8.png>
+
 
 
 ## Installation
