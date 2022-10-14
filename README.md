@@ -1,5 +1,6 @@
 # Hyperledger besu Multiple-tenency
-This network use Hyperledger besu and Tessera
+This network use Hyperledger besu and Tessera for using to send private transaction to the node that want privacy in blockchain network
+that mean another node in network can't see private transaction 
 
 
 ## Blueprint
