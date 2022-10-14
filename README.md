@@ -1,6 +1,14 @@
 # Hyperledger besu Multiple-tenency
 This network use Hyperledger besu and Tessera for using to send private transaction to the node that want privacy in blockchain network
 that mean another node in network can't see private transaction 
+and setting privacy transaction to multi-tenant network
+
+
+## How private transaction work?
+
+send private transaction diagram
+
+![besuAndTesseraDiagram drawio](https://user-images.githubusercontent.com/73258014/195951920-17386857-7483-4293-94a0-7761cdacb8eb.png)
 
 
 ## Blueprint
@@ -52,7 +60,11 @@ payload
 generate JWT token
 ```sh
 python3 generateJWT.py
-
 ```
+example out put
+
+<img width="400" alt="jwtExample" src="https://user-images.githubusercontent.com/73258014/195951260-ca169da1-b7a2-445b-9e58-90bc234df9ae.png">
+
+
 ## Following the hyperledger besu private network document 
 https://besu.hyperledger.org/en/stable/private-networks/
