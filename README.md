@@ -66,6 +66,7 @@ or move tessera directory to network directory and use
 $ ../../tessera-22.1.7/bin/tessera help
 
 ```
+# Start network 
 start besu node 
 ```sh
 $ besu --data-path=data --genesis-file=../genesis.json [--option]
