@@ -6,7 +6,7 @@ and setting privacy transaction to multi-tenant network
 
 ## How private transaction work?
 
-send private transaction diagram
+private transaction diagram (Low level)
 
 ![besuAndTesseraDiagram drawio](https://user-images.githubusercontent.com/73258014/195951920-17386857-7483-4293-94a0-7761cdacb8eb.png)
 
