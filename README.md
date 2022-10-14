@@ -11,7 +11,7 @@ send private transaction diagram
 ![besuAndTesseraDiagram drawio](https://user-images.githubusercontent.com/73258014/195951920-17386857-7483-4293-94a0-7761cdacb8eb.png)
 
 
-private transaction on hyperledger besu integration with tessera. tessera will use the same key pair as besu node and decryp transaction with
+private transaction on hyperledger besu is integration with tessera. tessera will use the same key pair as besu node and decryp transaction with
 signature solution and send to tessera endpoint node that we want to do some private transaction by P2P network. when finished P2P process tessera will return to besu node that return transaction call enclave transaction. besu node will be sending transaction to next process call minning for distribute transaction to all nodes
 when transaction distributed the only node that can be read data in enclave transaction is endpoint node 
 
