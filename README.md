@@ -10,6 +10,11 @@ send private transaction diagram
 
 ![besuAndTesseraDiagram drawio](https://user-images.githubusercontent.com/73258014/195951920-17386857-7483-4293-94a0-7761cdacb8eb.png)
 
+
+private transaction on hyperledger besu in integration with tessera. tessera will use the same key pair as besu node and decryp transaction with
+signature solution and return to besu node transaction that tessera return to besu that call enclave transaction and besu node will be sending to next process call minning for distribute transaction to all node 
+
+
 example Web3Quorum sending transaction
 
 ```sh
