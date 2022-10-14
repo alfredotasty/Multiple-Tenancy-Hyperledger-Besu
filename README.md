@@ -39,6 +39,11 @@ web3.priv.generateAndSendRawTransaction(contractOption);
 user that need to access to tenant will authentication in besu provide 2 way to authenticate that is username password and JWT
 when finished of authentication user will resolve token to use for request api data in tenant
 
+example to use token
+```sh
+curl -X POST -H 'Authorization: Bearer <JWT_TOKEN>' -d '{"jsonrpc":"2.0","method":"<API_METHOD>","params":[],"id":1}' <JSON-RPC-http-hostname:port>
+```
+you can use in postman for easily way
 
 
 ## Installation
