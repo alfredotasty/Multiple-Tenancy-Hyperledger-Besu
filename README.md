@@ -10,6 +10,23 @@ send private transaction diagram
 
 ![besuAndTesseraDiagram drawio](https://user-images.githubusercontent.com/73258014/195951920-17386857-7483-4293-94a0-7761cdacb8eb.png)
 
+example Web3Quorum sending transaction
+
+```sh
+const Web3 = require("web3");
+const Web3Quorum = require("web3js-quorum");
+const web3 = new Web3Quorum(new Web3("http://127.0.0.1")) // besu endpoint network 
+
+const contractOption = {
+    data: '0x123',// conrtract byte code 
+    privateFrom: "tesseraNode1Publickey", //tesseraNode1Publickey
+    privateFor: ["tesseraNode2PublicKey"], //tesseraNode2PublicKey
+    privateKey: "besuNode1PrivateKey" //besuNode1PrivateKey
+};
+web3.priv.generateAndSendRawTransaction(contractOption);
+
+```
+
 
 ## Blueprint
 <img width="600" alt="multiplewallet" src=https://user-images.githubusercontent.com/73258014/195950258-c310653c-91ed-4182-8d8d-a1ed500b45f8.png>
