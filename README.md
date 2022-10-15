@@ -117,6 +117,9 @@ you can use in postman for easily way
 ## Hyperledger besu API
 https://api.besu.hyperledger.org
 
+## Tessera API
+https://consensys.github.io/tessera/#tag/quorum-to-tessera/operation/getDecryptedPayloadJson
+
 ## Following the hyperledger besu private network document 
 https://besu.hyperledger.org/en/stable/private-networks/
 
