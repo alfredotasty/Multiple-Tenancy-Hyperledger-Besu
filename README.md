@@ -65,8 +65,10 @@ $ ../../tessera-22.1.7/bin/tessera help
 start besu node 
 ```sh
 $ besu --data-path=data --genesis-file=../genesis.json [--option]
-
 ```
+hyperledger besu private network option
+https://besu.hyperledger.org/en/stable/private-networks/reference/cli/options/#specify-options
+
 start tessera node 
 ```sh
 $ tessera -configfile tessera.conf
@@ -75,6 +77,21 @@ $ ../../tessera-22.1.7/bin/tessera -configfile tessera.conf
 
 ```
 ## Authentication
+
+What you prepare for authenticatate
+- Type of secret key
+- Payload
+- secret key
+
+secert key (RSA)
+
+```sh
+openssl genrsa -out privateRSAKey.pem 2048
+```
+public RSA key
+```sh
+openssl rsa -pubout -in privateRSAKey.pem -pubout -out publicRSAKey.pem
+```
 
 payload
 ```sh
