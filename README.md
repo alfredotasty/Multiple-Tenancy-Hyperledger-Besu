@@ -39,12 +39,6 @@ web3.priv.generateAndSendRawTransaction(contractOption);
 user that need to access to tenant will authentication in besu provide 2 way to authenticate that is username password and JWT
 when finished of authentication user will resolve token to use for request api data in tenant
 
-example to use token
-```sh
-curl -X POST -H 'Authorization: Bearer <JWT_TOKEN>' -d '{"jsonrpc":"2.0","method":"<API_METHOD>","params":[],"id":1}' <JSON-RPC-http-hostname:port>
-```
-you can use in postman for easily way
-
 
 ## Installation
 
@@ -96,6 +90,12 @@ python3 generateJWT.py
 example out put
 
 <img width="400" alt="jwtExample" src="https://user-images.githubusercontent.com/73258014/195951260-ca169da1-b7a2-445b-9e58-90bc234df9ae.png">
+
+example to use token
+```sh
+curl -X POST -H 'Authorization: Bearer <JWT_TOKEN>' -d '{"jsonrpc":"2.0","method":"<API_METHOD>","params":[],"id":1}' <JSON-RPC-http-hostname:port>
+```
+you can use in postman for easily way
 
 ## Hyperledger besu API
 https://api.besu.hyperledger.org
