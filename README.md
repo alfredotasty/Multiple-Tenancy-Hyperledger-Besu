@@ -34,7 +34,7 @@ web3.priv.generateAndSendRawTransaction(contractOption);
 
 
 ## Multiple-tenency Blueprint
-<img width="600" alt="multiplewallet" src=https://user-images.githubusercontent.com/73258014/195950258-c310653c-91ed-4182-8d8d-a1ed500b45f8.png>
+![NewDiagram drawio](https://user-images.githubusercontent.com/73258014/196552859-6b35e930-e245-40bc-aff1-a984ffc0cc43.png)
 
 user that need to access to tenant will authentication in besu provide 2 way to authenticate that is username password and JWT
 when finished of authentication user will resolve token to use for request api data in tenant
