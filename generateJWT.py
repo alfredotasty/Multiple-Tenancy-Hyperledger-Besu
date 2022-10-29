@@ -52,7 +52,7 @@ QQIDAQAB
 -----END PUBLIC KEY-----"""
 
     # tenant node that user need to authenticate 
-    privacy_public_key = "keiNgxxEVbW1fzp0b8aNj1n5JxN+n1PwSoITiPruYhU="
+    privacy_public_key = "VazacdLe/IK9Lpq7K7WkNR5Lhf6gnl23ESovCES/9gY="
     endcoded = jwt.encode({"permissions":["*:*"],"privacyPublicKey":privacy_public_key,"exp": 1600899999002},private_key, algorithm="RS256")
     return endcoded
 

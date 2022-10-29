@@ -752,3 +752,27 @@ SELECT 1 FROM ST_TRANSACTION [42102-212]
 2022-10-15 04:19:19 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
 SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 02:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 02:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 17:31:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 17:31:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 19:13:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 19:13:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-29 12:40:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-29 12:40:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]

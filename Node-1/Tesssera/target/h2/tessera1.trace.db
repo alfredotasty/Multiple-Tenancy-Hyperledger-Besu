@@ -800,3 +800,128 @@ SELECT 1 FROM ST_TRANSACTION [42102-212]
 2022-10-15 16:27:51 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
 SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-15 18:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-15 18:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-15 19:49:47 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: /Users/nammon/Desktop/multi-tanent-node/Node-1/Tesssera/target/h2/tessera1.mv.db [2.1.212/7]" [50000-212]
+	at com.h2database@2.1.212/org.h2.message.DbException.get(DbException.java:212)
+	at com.h2database@2.1.212/org.h2.message.DbException.convert(DbException.java:395)
+	at com.h2database@2.1.212/org.h2.mvstore.db.Store.lambda$new$0(Store.java:124)
+	at com.h2database@2.1.212/org.h2.mvstore.MVStore.handleException(MVStore.java:3349)
+	at com.h2database@2.1.212/org.h2.mvstore.MVStore.panic(MVStore.java:590)
+	at com.h2database@2.1.212/org.h2.mvstore.MVStore.<init>(MVStore.java:466)
+	at com.h2database@2.1.212/org.h2.mvstore.MVStore$Builder.open(MVStore.java:4118)
+	at com.h2database@2.1.212/org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at com.h2database@2.1.212/org.h2.engine.Database.<init>(Database.java:324)
+	at com.h2database@2.1.212/org.h2.engine.Engine.openSession(Engine.java:92)
+	at com.h2database@2.1.212/org.h2.engine.Engine.openSession(Engine.java:222)
+	at com.h2database@2.1.212/org.h2.engine.Engine.createSession(Engine.java:201)
+	at com.h2database@2.1.212/org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at com.h2database@2.1.212/org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at com.h2database@2.1.212/org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari@5.0.1/com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at tessera.data@22.1.7/com.quorum.tessera.data.internal.HikariDataSourceFactory.create(HikariDataSourceFactory.java:28)
+	at tessera.data@22.1.7/com.quorum.tessera.data.internal.EncryptedTransactionDAOProvider.provider(EncryptedTransactionDAOProvider.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.ServiceLoader$ProviderImpl.invokeFactoryMethod(ServiceLoader.java:745)
+	at java.base/java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:727)
+	at java.base/java.util.ServiceLoader$3.next(ServiceLoader.java:1403)
+	at java.base/java.util.ServiceLoader.findFirst(ServiceLoader.java:1812)
+	at tessera.data@22.1.7/com.quorum.tessera.data.EncryptedTransactionDAO.create(EncryptedTransactionDAO.java:86)
+	at tessera.transaction@22.1.7/com.quorum.tessera.transaction.internal.PrivacyHelperProvider.provider(PrivacyHelperProvider.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.ServiceLoader$ProviderImpl.invokeFactoryMethod(ServiceLoader.java:745)
+	at java.base/java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:727)
+	at java.base/java.util.ServiceLoader$3.next(ServiceLoader.java:1403)
+	at java.base/java.util.ServiceLoader.findFirst(ServiceLoader.java:1812)
+	at tessera.transaction@22.1.7/com.quorum.tessera.transaction.PrivacyHelper.create(PrivacyHelper.java:33)
+	at tessera.transaction@22.1.7/com.quorum.tessera.transaction.internal.EncodedPayloadManagerProvider.provider(EncodedPayloadManagerProvider.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.ServiceLoader$ProviderImpl.invokeFactoryMethod(ServiceLoader.java:745)
+	at java.base/java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:727)
+	at java.base/java.util.ServiceLoader$3.next(ServiceLoader.java:1403)
+	at java.base/java.util.ServiceLoader.findFirst(ServiceLoader.java:1812)
+	at tessera.transaction@22.1.7/com.quorum.tessera.transaction.EncodedPayloadManager.create(EncodedPayloadManager.java:37)
+	at tessera.application@22.1.7/com.quorum.tessera.launcher.Main.main(Main.java:98)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: /Users/nammon/Desktop/multi-tanent-node/Node-1/Tesssera/target/h2/tessera1.mv.db [2.1.212/7]" [50000-212]
+	at com.h2database@2.1.212/org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at com.h2database@2.1.212/org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 48 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: /Users/nammon/Desktop/multi-tanent-node/Node-1/Tesssera/target/h2/tessera1.mv.db [2.1.212/7]
+	at com.h2database@2.1.212/org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at com.h2database@2.1.212/org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at com.h2database@2.1.212/org.h2.mvstore.MVStore.<init>(MVStore.java:449)
+	... 42 more
+2022-10-15 19:54:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-15 19:54:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-15 21:19:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-15 21:19:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-18 20:05:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-18 20:05:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 02:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 02:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 17:11:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 17:11:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-20 19:13:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-20 19:13:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-25 12:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-25 12:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-25 16:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-25 16:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-29 12:42:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-29 12:42:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
+2022-10-29 12:44:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_TRANSACTION [42102-212]
+2022-10-29 12:44:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ST_AFFECTED_TRANSACTION" not found; SQL statement:
+SELECT 1 FROM ST_AFFECTED_TRANSACTION [42102-212]
